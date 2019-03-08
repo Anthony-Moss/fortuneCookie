@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+    background-color: rgb(75, 23, 105)
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex-block;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Srisakdi', cursive;
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+button {
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+    margin-top: 20px;
+}
