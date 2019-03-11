@@ -34,7 +34,7 @@ fetch('http://my-little-cors-proxy.herokuapp.com/http://yerkee.com/api/fortune.t
         let buttonClick = document.querySelector("[data-input]").addEventListener("click", function () {
             // let request = new XMLHttpRequest();
             // let data = JSON.parse(request.responseText);
-            document.querySelector("[data-output]").innerHTML = actualData;
+            document.querySelector("[data-output]").innerHTML = actualData.fortune;
         });
 
     });
