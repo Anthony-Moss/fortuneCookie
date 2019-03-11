@@ -24,3 +24,17 @@ let buttonClick = document.querySelector("[data-input]").addEventListener("click
 request.open('GET', 'http://localhost:3000/http://yerkee.com/api/fortune.txt', true);
 
 request.send();
+
+fetch('http://yerkee.com/api/fortune.txt')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (actualData) {
+        console.log(actualData)
+        let buttonClick = document.querySelector("[data-input]").addEventListener("click", function () {
+            // let request = new XMLHttpRequest();
+            // let data = JSON.parse(request.responseText);
+            document.querySelector("[data-output]").innerHTML = actualData;
+        });
+
+    });
