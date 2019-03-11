@@ -13,17 +13,17 @@
     // };
 // }
 
-let request = new XMLHttpRequest();
+// let request = new XMLHttpRequest();
 
-let buttonClick = document.querySelector("[data-input]").addEventListener("click", function () {
-    // let request = new XMLHttpRequest();
-    let data = JSON.parse(request.responseText);
-    document.querySelector("[data-output]").innerHTML = data.fortune;
-});
+// let buttonClick = document.querySelector("[data-input]").addEventListener("click", function () {
+//     // let request = new XMLHttpRequest();
+//     let data = JSON.parse(request.responseText);
+//     document.querySelector("[data-output]").innerHTML = data.fortune;
+// });
 
-request.open('GET', 'http://localhost:3000/http://yerkee.com/api/fortune.txt', true);
+// request.open('GET', 'http://localhost:3000/http://yerkee.com/api/fortune.txt', true);
 
-request.send();
+// request.send();
 
 fetch('http://yerkee.com/api/fortune.txt')
     .then(function (response) {
