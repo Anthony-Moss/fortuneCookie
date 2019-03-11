@@ -25,7 +25,7 @@
 
 // request.send();
 
-fetch('http://yerkee.com/api/fortune.txt')
+fetch('http://my-little-cors-proxy.herokuapp.com/http://yerkee.com/api/fortune.txt')
     .then(function (response) {
         return response.json();
     })
